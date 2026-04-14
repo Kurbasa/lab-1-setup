@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+yarn-error.log
+.git
+.github
+.vscode
+Dockerfile*
+README*
+docs
+**/*.md
+
+node_modules
+Dockerfile
