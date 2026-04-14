@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // GitHub Pages serves the site under /<repo>/.
-  // For the lab repo name `lab-1-setup`, the correct base is `/lab-1-setup/`.
-  base: '/lab-1-setup/',
+  // GitHub Pages serves the site under /<repo>/, while Vercel serves from /.
+  // Detect GitHub Actions builds to set the correct base automatically.
+  base: process.env.GITHUB_ACTIONS ? '/lab-1-setup/' : '/',
   plugins: [react()],
 })
