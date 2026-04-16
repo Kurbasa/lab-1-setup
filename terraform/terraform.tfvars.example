@@ -1,0 +1,8 @@
+# Copy to terraform.tfvars (never commit terraform.tfvars).
+# Get token: Vercel → Account Settings → Tokens → Create.
+
+vercel_api_token = "vcp_8n12yU4CmofIqa6t9y5B0Xzqcq0H3eFyh6YyhIBAJsKUOwnNOz0MCjGn"
+student_id       = "nosko"
+
+# Optional: if your Lab 1 repo is not Kurbasa/lab-1-setup
+# github_repo = "owner/repo"
