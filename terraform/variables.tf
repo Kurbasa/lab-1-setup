@@ -4,6 +4,13 @@ variable "vercel_api_token" {
   sensitive   = true
 }
 
+variable "vercel_team" {
+  description = "Vercel Team slug or team ID (Team Settings). Set if the project is under a Team; omit for personal Hobby account."
+  type        = string
+  default     = null
+  nullable    = true
+}
+
 variable "student_id" {
   description = "Student ID for custom subdomain: surname, nickname, etc."
   type        = string

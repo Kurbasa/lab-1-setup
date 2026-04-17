@@ -1,8 +1,13 @@
-# Copy to terraform.tfvars (never commit terraform.tfvars).
-# Get token: Vercel → Account Settings → Tokens → Create.
+# Скопіюй цей файл у terraform.tfvars і підстав СПРАВЖНІЙ токен.
+# Не вставляй реальний vcp_... у файли, що йдуть у Git — GitHub блокує push (secret scanning).
+# Формат токена: vcp_... (довжина як у прикладу в твоєму локальному terraform.tfvars).
+# Токен: Vercel → Account Settings → Tokens → Create.
 
-vercel_api_token = "vcp_8n12yU4CmofIqa6t9y5B0Xzqcq0H3eFyh6YyhIBAJsKUOwnNOz0MCjGn"
+vercel_api_token = "your-vercel-api-token"
 student_id       = "nosko"
+
+# Якщо проєкт у Vercel під командою (Team), додай slug або team ID:
+# vercel_team = "my-team-slug"
 
 # Optional: if your Lab 1 repo is not Kurbasa/lab-1-setup
 # github_repo = "owner/repo"
